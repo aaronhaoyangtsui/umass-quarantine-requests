@@ -1,0 +1,43 @@
+{
+  "name": "cs326-final-vav",
+  "version": "1.0.0",
+  "description": "server to handle request",
+  "main": "server.js",
+  "type": "module",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/grievans/cs326-final-vav.git"
+  },
+  "keywords": [
+    "crud",
+    "server"
+  ],
+  "author": "Aaron, Griffin, Joseph",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/grievans/cs326-final-vav/issues"
+  },
+  "homepage": "https://github.com/grievans/cs326-final-vav#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "connect-pg-simple": "^7.0.0",
+    "express": "^4.17.1",
+    "express-session": "^1.17.2",
+    "faker": "^5.5.3",
+    "passport": "^0.5.0",
+    "passport-local": "^1.0.0",
+    "pg": "^8.7.1",
+    "pg-promise": "^10.11.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.4.1",
+    "htmlhint": "^1.0.0"
+  }
+}
