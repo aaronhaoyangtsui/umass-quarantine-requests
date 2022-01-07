@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Make Request - UMassQuarantineRequests</title>
+
+    <!-- handle request -->
+    <script defer src="quarantining.js"></script>
+
+  </head>
+  <body class="text-center">
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" 
+    integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" 
+    integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+
+    <div class="bg-image"></div>
+
+    <h1>Quarantining?</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+              <h4>Request</h4>
+              <div class="form-floating">
+                <input type="text" id="requestTitle" class="form-control" placeholder="[untitled]">
+                <label for="requestTitle" class="text-muted">Request title</label>
+              </div>
+              <div class="form-floating">
+                <input type="text" id="requestDescription" class="form-control" placeholder="[no description given]">
+                <label for="requestDescription" class="text-muted">Request description</label>
+                <!-- Maybe should make into a larger box? Not sure how to make a multi-line text input rn -->
+              </div>
+                
+
+
+            </div>
+            <div class="col">
+              <div class="form-floating">
+                <input type="text" id="name" class="form-control" placeholder="[no name given]"> 
+                
+                <label for="name" class="text-muted">Name</label>
+              </div>
+
+              <div class="form-floating">
+                <input type="text" id="location" class="form-control" placeholder="[no location given]"> 
+                <label for="location" class="text-muted">Location</label>
+              </div>
+              <div class="form-floating">
+                <input type="email" id="email" class="form-control" placeholder="[none]">
+                <label for="email" class="text-muted">Email (optional)</label>
+              </div>
+              <div class="form-floating">
+                <input type="tel" id="phoneNumber" class="form-control" placeholder="[none]">
+                <label for="phoneNumber" class="text-muted">Phone number (optional)</label>
+              </div>
+
+
+
+            </div>
+        </div>
+
+    </div>
+    <br>
+    <!-- <a href="status.html" class="btn btn-primary" type="submit">submit request</a> -->
+    
+    <button type="submit" id="submit" class="btn btn-primary">Submit Request</button>
+    <button type="submit" id="update" class="btn btn-primary">Update Request</button>
+    <button type="submit" id="get" class="btn btn-primary">View My Request</button>
+    <button type="submit" id="delete" class="btn btn-primary">Delete Request</button>
+
+
+    <br>
+    <br>
+
+    <nav class="navbar fixed-top navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="welcome.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link" onclick="history.go(-1)">Back</a>
+              <!--                        doesn't work now maybe add eventlistner later-->
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="mailto:jojoproyy@gmail.com">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="profile.html">Account Info</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/user/logout">Logout</a>
+          </li>
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--  include this navbar in every page-->
+
+
+
+
+
+
+
+
+
+  </body>
+</html>

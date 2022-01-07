@@ -1,0 +1,7 @@
+.bg-image {
+    background-image: url('images/campus.jpg');
+    height: 15em;
+    max-height: 20vh;
+    background-size: cover;
+    background-position: center;
+}
